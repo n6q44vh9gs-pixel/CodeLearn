@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Curso de C# — CodeLearn</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>CodeLearn</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="csharp.html">Cursos</a>
+                <a href="contato.html">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="lesson-container">
+            <h1>Curso de C# — Introdução completa</h1>
+            <p class="small-muted">Lição iniciante: tipos, variáveis, loops, condicionais, métodos e orientação a objetos básicos. Inclui exemplos práticos, exercícios e soluções.</p>
+
+            <div class="lesson-nav">
+                <a href="#introducao">Introdução</a>
+                <a href="#variaveis">Variáveis e Tipos</a>
+                <a href="#estruturas">Estruturas de Controlo</a>
+                <a href="#metodos">Métodos</a>
+                <a href="#classes">Classes</a>
+                <a href="#exercicios">Exercícios</a>
+                <a href="#solucoes">Soluções</a>
+            </div>
+
+            <section id="introducao">
+                <h2>1. Introdução</h2>
+                <p>C# é uma linguagem orientada a objetos, usada tanto para aplicações desktop, web (com .NET), jogos (Unity), entre outros. Para correr exemplos localmente, instale o .NET SDK (versão recomendada 6 ou 7) e usa o comando "<code>dotnet new console</code>" seguido de "<code>dotnet run</code>".</p>
+                <div class="example-box">
+                    <strong>Exemplo: programa "Hello World"</strong>
+                    <pre><code>using System;
+class Program 
+{
+    static void Main() 
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="variaveis">
+                <h2>2. Variáveis e Tipos</h2>
+                <p>Tipos primitivos principais em C#:</p>
+                <ul>
+                    <li><code>int</code> — número inteiro (ex.: 0, 1, -10)</li>
+                    <li><code>double</code> — número com casas decimais (ex.: 3.14)</li>
+                    <li><code>string</code> — texto</li>
+                    <li><code>char</code> — caracter (ex.: 'a')</li>
+                    <li><code>bool</code> — booleano (<code>true</code> ou <code>false</code>)</li>
+                </ul>
+
+                <p>Declaração e atribuição:</p>
+                <div class="example-box">
+                    <pre><code>int idade = 17;
+double preco = 4.99;
+string nome = "Leonor";
+bool ativo = true;
+char letra = 'L';
+                    </code></pre>
+                </div>
+
+                <p class="small-muted">Dica: Utilize nomes significativos e siga as convenções (camelCase para variáveis locais).</p>
+            </section>
+
+            <section id="estruturas">
+                <h2>3. Estruturas de Controlo</h2>
+                <h3>3.1 Condicionais</h3>
+                <div class="example-box">
+                    <pre><code>int nota = 12;
+if (nota >= 16) 
+{
+    Console.WriteLine("Excelente");
+} else if (nota >= 10 && nota < 16) {
+    Console.WriteLine("Suficiente");
+} else {
+    Console.WriteLine("Insuficiente");
+}
+                    </code></pre>
+                </div>
+
+                <h3>3.2 Loops</h3>
+                <p>For, while, e foreach:</p>
+                <div class="example-box">
+                    <pre><code>// for
+for (int i = 0; i &lt; 5; i++) 
+{
+    Console.WriteLine(i);
+}
+
+// while
+int j = 0;
+while (j &lt; 5) {
+    Console.WriteLine(j);
+    j++;
+}
+
+// foreach
+    string[] nomes = { "Ana", "Bruno", "Alexandre" };
+    foreach (var n in nomes) 
+    {
+        Console.WriteLine(n);
+    }
+                    </code></pre>
+                </div>
+                <p class="small-muted">Explicação: For é utilizado quando conheces o número de iterações; while quando depende de uma condição; foreach para percorrer arrays/coleções.</p>
+            </section>
+
+            <section id="metodos">
+                <h2>4. Métodos</h2>
+                <p>Métodos (funções) ajudam a organizar código e a evitar repetição.</p>
+                <div class="example-box">
+                    <pre><code>static int Soma(int a, int b) 
+{
+    return a + b;
+}
+static void Main() 
+{
+    int resultado = Soma(3, 4);
+    Console.WriteLine(resultado); // 7
+}
+                    </code></pre>
+                </div>
+            </section>
+            
+            <section id="classes">
+                <h2>5. Classes </h2>
+                <p>C# usa classes para modelar objetos - Construtores e Propriedades <code>get/set</code>:</p>
+                <div class="example-box">
+                    <pre><code>class Pessoa
+{
+    private string nome;
+    private int idade;
+
+    public Pessoa(string nome, int idade) 
+    {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public string GetNome() { return nome; }
+    public void SetNome(string n) { nome = n; }
+
+    public int GetIdade() { return idade; }
+    public void SetIdade(int i) { idade = i; }
+}
+            
+static void Main() 
+{
+    Pessoa p = new Pessoa("Leonor", 17);
+    Console.WriteLine(p.GetNome());
+}
+                    </code></pre>
+                </div>
+            </section>
+            
+            <section id="exercicios">
+                <h2>Exercícios</h2>
+                <div class="exercise">
+                    <strong>Exercício 1</strong>
+                    <p>Cria um programa que peça ao utilizador o nome e a idade e mostre uma mensagem: "Olá &lt;nome&gt;, tens &lt;idade&gt; anos."</p>
+                </div>
+
+                <div class="exercise">
+                    <strong>Exercício 2</strong>
+                    <p>Faz um programa que calcule a soma dos números de 1 a N (N fornecido pelo utilizador) utilizando um loop.</p>
+                </div>
+
+                <div class="exercise">
+                    <strong>Exercício 3</strong>
+                    <p>Cria uma classe <code>ContaBancaria</code> com <code>saldo</code> (privado), métodos <code>Depositar</code>, <code>Retirar</code> e <code>MostrarSaldo</code>. Testa a classe no programa principal.</p>
+                </div>
+            </section>
+
+            <section id="solucoes">
+                <h2>Soluções (exemplos)</h2>
+                <h3>Exercício 1 — solução exemplo</h3>
+                <div class="example-box">
+                    <pre><code>using System;
+class Program 
+{
+    static void Main() 
+    {
+        Console.Write("Nome: ");
+        string nome = Console.ReadLine();
+        Console.Write("Idade: ");
+        int idade = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Olá {nome}, tens {idade} anos.");
+    }
+}
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 2 — solução exemplo</h3>
+                <div class="example-box">
+                    <pre><code>using System;
+class Program 
+{
+    static void Main() 
+    {
+        Console.Write("N: ");
+        int N = int.Parse(Console.ReadLine());
+        int soma = 0;
+        for (int i = 1; i <= N; i++) 
+        {
+            soma += i;
+        }
+        Console.WriteLine($"Soma 1..{N} = {soma}");
+    }
+}
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 3 — solução exemplo</h3>
+                <div class="example-box">
+                    <pre><code>using System;
+class ContaBancaria 
+{
+    private double saldo;
+
+    public ContaBancaria(double inicial) 
+    {
+    saldo = inicial;
+    }
+
+    public void Depositar(double valor) 
+    {
+        if (valor &gt; 0) saldo += valor;
+    }
+
+    public bool Retirar(double valor) 
+    {
+        if (valor &gt; 0 && valor &lt;= saldo) 
+        {
+            saldo -= valor;
+            return true;
+        }
+        return false;
+    }
+
+    public double MostrarSaldo() 
+    {
+        return saldo;
+    }
+}
+                        
+class Program 
+{
+    static void Main() 
+    {
+        ContaBancaria c = new ContaBancaria(100);
+        c.Depositar(50);
+        bool ok = c.Retirar(30);
+        Console.WriteLine($"Retiro efectuado? {ok}. Saldo = {c.MostrarSaldo()}");
+    }
+}
+                    </code></pre>
+                </div>
+            </section>
+
+            <hr />
+            <p class="small-muted">Podeis requerir mais exercícios ou explicações na aba "Contacto".</p>
+        </main>
+
+        <footer>
+            <p>© 2025 CodeLearn. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

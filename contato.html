@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacte-nos — CodeLearn</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>CodeLearn</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="csharp.html">Cursos</a>
+                <a href="contato.html">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="lesson-container">
+            <h1>Contacto</h1>
+            <p>Caso existirem dúvidas ou sugestões, preencha o formulário abaixo.</p>
+
+            <!-- Formulário -->
+            <section class="contact-section">
+                <h2>Formulário de Contacto</h2>
+                <form action="mailto:teuemail@exemplo.com" method="post" enctype="text/plain" class="contact-form">
+                    
+                    <!-- Nome e Email -->
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Ex: Leonor">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                    </div>
+
+                    <!-- Assunto -->
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required placeholder="Ex: Sugestão para site">
+                    </div>
+
+                    <!-- Tipo de questão (radio) -->
+                    <div class="form-group">
+                        <label>Tipo de questão:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tipo" value="Dúvida" required> Dúvida</label>
+                            <label><input type="radio" name="tipo" value="Sugestão"> Sugestão</label>
+                            <label><input type="radio" name="tipo" value="Elogio"> Elogio</label>
+                        </div>
+                    </div>
+
+                    <!-- Interesses (checkbox) -->
+                     <div class="form-group">
+                        <label>Interesses:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interesses" value="C#"> C#</label>
+                            <label><input type="checkbox" name="interesses" value="Python"> Python</label>
+                            <label><input type="checkbox" name="interesses" value="JavaScript"> JavaScript</label>
+                            <label><input type="checkbox" name="interesses" value="Java"> Java</label>
+                        </div>
+                    </div>
+
+                    <!-- Prioridade (select) -->
+                     <div class="form-group">
+                        <label for="prioridade">Prioridade:</label>
+                        <select id="prioridade" name="prioridade" required>
+                            <option value="">--Seleciona--</option>
+                            <option value="Alta">Alta</option>
+                            <option value="Média">Média</option>
+                            <option value="Baixa">Baixa</option>
+                        </select>
+                    </div>
+
+                    <!-- Mensagem -->
+                     <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreve a tua mensagem aqui..."></textarea>
+                    </div>
+                    
+                    <!-- Botões -->
+                     <div class="form-buttons">
+                        <button type="submit" class="btn-primary">Enviar</button>
+                        <button type="reset" class="btn-secondary">Limpar</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Tabela (Comparação de Linguagens) -->
+             <section>
+                <h2>Comparação de Linguagens de Programação</h2>
+                <p>Esta tabela demonstra resumidamente a popularidade e exemplos de uso das principais linguagens de programação estudadas no site.</p>
+                
+                <table>
+                    <tr>
+                        <th>Linguagem</th>
+                        <th>Popularidade</th>
+                        <th>Exemplos de Uso</th>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>Alta</td>
+                        <td>Jogos, Aplicações Desktop/Web</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Muito Alta</td>
+                        <td>Data Science, Scripts, Web</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Alta</td>
+                        <td>Aplicações Empresariais, Android</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Muito Alta</td>
+                        <td>Web Front-End, Node.js</td>
+                    </tr>
+                </table>
+            </section>
+
+
+            <!-- Vídeo -->
+            <section>
+                <h2>Vídeo Informativo</h2>
+                <video width="560" height="315" controls>
+                    <source src="multimedia/video1.mp4" type="video/mp4">
+                    O teu navegador não suporta vídeos HTML5.
+                </video>
+            </section>
+
+
+            <!-- Imagens -->
+             <section>
+                <h2>Galeria</h2>
+                <img src="multimedia/imagem3.webp" alt="Exemplo de código" width="300">
+                <img src="multimedia/imagem2.png" alt="Programação" width="300">
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 CodeLearn. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

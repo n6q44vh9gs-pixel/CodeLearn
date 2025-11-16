@@ -1,0 +1,341 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b0f3f;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #2b0f3f;
+    border-bottom: 3px solid #d580ff;
+}
+
+header h1 {
+    color: #ffb6f3;
+    font-weight: 700;
+}
+
+/* Navegador */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffb6f3;
+}
+
+/* Seção Principal */
+.main-section {
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 600px;
+}
+
+.main-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-section span {
+    color: #ffb6f3;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d1c1e0;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 40px;
+}
+
+.btn-primary {
+    background-color: #ff80e0;
+    color: #2b0f3f;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #ffb6f3;
+}
+
+.btn-secondary {
+    background-color: #3b1b5a;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid #ffb6f3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #ffb6f3;
+    color: #2b0f3f;
+}
+
+/* Seção de Linguagens */
+.language-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.language-card {
+    background-color: #3b1b5a;
+    width: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.language-card:hover {
+    background-color: #ffb6f3;
+    color: #2b0f3f;
+    transform: translateY(-5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a082a;
+    padding: 40px;
+    text-align: center;
+    color: #c8a0df;
+    margin-top: 100px;
+}
+
+/* Página de Curso */
+.course-link {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 80px 0;
+}
+
+.course-link .card {
+    background: linear-gradient(180deg, rgba(59,27,90,0.9), rgba(45,10,60,0.9));
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.course-link .card h3 {
+    margin-top: 0;
+    color: #ffb6f3;
+}
+
+/* Conteúdo das Lições */
+.lesson-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: linear-gradient(180deg, rgba(40,12,46,0.6), rgba(30,8,36,0.6));
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.lesson-container h1, .lesson-container h2, .lesson-container h3 {
+    color: #ffb6f3;
+}
+
+.lesson-container p, .lesson-container li, .lesson-container pre, .lesson-container code {
+    color: #e9d9f2;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.lesson-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.lesson-nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #3b1b5a;
+    color: white;
+}
+
+/* Exemplo, exercícios e código*/
+.example-box {
+    background: rgba(255,255,255,0.04);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 12px 0;
+    overflow-x: auto;
+}
+
+.exercise {
+    border-left: 4px solid #ffb6f3;
+    padding: 12px;
+    margin: 12px 0;
+    background: rgba(255,255,255,0.02);
+}
+
+.small-muted {
+    font-size: 13px;
+    color: #cdb6e5;
+}
+
+/* Contacto */
+/* Reserta */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ffb6f3;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3b1b5a;
+    color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Formulário Contacto */
+.contact-section {
+    max-width: 700px;
+    margin: 50px auto 100px auto;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(59,27,90,0.9), rgba(45,10,60,0.9));
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #ffb6f3;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffd6f8;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ff80e0;
+    background-color: #3b1b5a;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #ffb6f3;
+    outline: none;
+    box-shadow: 0 0 10px #ffb6f3;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: 400;
+    color: #ffd6f8;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 5px;
+    accent-color: #ffb6f3;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.form-buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-buttons .btn-primary {
+    background-color: #ff80e0;
+    color: #2b0f3f;
+}
+
+.form-buttons .btn-primary:hover {
+    background-color: #ffb6f3;
+}
+
+.form-buttons .btn-secondary {
+    background-color: #3b1b5a;
+    color: #fff;
+    border: 1px solid #ffb6f3;
+}
+
+.form-buttons .btn-secondary:hover {
+    background-color: #ffb6f3;
+    color: #2b0f3f;
+}
